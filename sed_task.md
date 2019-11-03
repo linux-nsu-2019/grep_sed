@@ -5,14 +5,14 @@
 
 Команда:
 ```
-$
+$ sed -i 's/a/@/g' google-10000-english.txt
 ```
 
 ### 1.2. `er в конце слова -> x0r`
 
 Команда:
 ```
-$
+$ sed -i '/\<.*er\>/s/er/x0r' google-10000-english.txt
 ```
 
 ### 1.3. `and -> &`

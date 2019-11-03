@@ -5,14 +5,14 @@
 
 Команда:
 ```
-$
+$ sed -i.bak 's/a/@/g' google-10000-english.txt
 ```
 
 ### 1.2. `for -> 4`
 
 Команда:
 ```
-$
+$ sed -i.bak 's/for/4/g' google-10000-english.txt
 ```
 
 ### 1.3. `w -> \/\/`

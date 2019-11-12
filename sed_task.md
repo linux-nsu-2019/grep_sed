@@ -3,32 +3,32 @@
 
 ### 1.1. `a -> @`
 
-Команда:sed 's!a!@!g' google-10000-english.txt
+Команда:sed -i 's!a!@!g' google-10000-english.txt
 ```
 $
 ```
 
 ### 1.2. `er в конце слова -> x0r`
 
-Команда:sed 's!er!x0r!g' google-10000-english.txt
+Команда:sed -i 's!er\>!x0r!g' google-10000-english.txt
 ```
 $
 ```
 
 ### 1.3. `and -> &`
 
-Команда:sed -n 's!and!\&!gp' google-10000-english.txt 
+Команда:sed -i 's!and!\&!g' google-10000-english.txt 
 ```
 $
 ```
 
 ## 2. В скольких словах были выполнены все три замены?
 
-Ответ:1 
+Ответ:2 
 
 ## 3. Удалить из файла все слова, содержащие букву r. Сколько слов осталось?
 
-Команда:sed '/r/d' google-10000-english.txt | wc -w 
+Команда:sed -i '/r/d' google-10000-english.txt | wc -w 
 
 
 ```
@@ -39,7 +39,7 @@ $
 
 ## 4. Взять в скобки все слова, начинающиеся с буквы b.
 
-Команда:sed 's/\<b/(&)/' google-10000-english.txt
+Команда:sed -i 's!\<b.*\>!(&)!' google-10000-english.txt
 
 ```
 $
